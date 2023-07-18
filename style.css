@@ -1,0 +1,73 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+button:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+#header{
+    background: black;
+    color: aliceblue;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+#navbutton{
+    margin-bottom: 3px;
+}
+
+#about{
+    background-color: #b9f2ff;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+#me{
+    border-radius: 8px;
+    width: 70%; 
+}
+
+#portfolio{
+    background-color: #a6e7ff ;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 20%;
+}
+
+#porex, #fitex{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#contact{
+    background-color: #9bddff ;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+#gmail, #insta{
+    width: 20%;
+    max-height: fit-content;
+}
+
+#footer{
+    background-color: black;
+    color: aliceblue;
+    width: 100%;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+
+}
