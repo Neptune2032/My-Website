@@ -10,17 +10,21 @@
 <body>
     <div class="container-fluid" id="header">
         <div class="row">
-            <div class="col">
+            <div class="col-3">
+                <div class="dropdown" id="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        ☰
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" id="insidedropdown">
+                      <li><a class="dropdown-item" href="#about" id="abouttext">About</a></li>
+                      <li><a class="dropdown-item" href="#portfolio" id="portfoliotext">Portfolio</a></li>
+                      <li><a class="dropdown-item" href="#contact" id="contacttext">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6">
                 <h2>Gregory Smurnyy</h2>
             </div>
-            <div class="col" id="navbuttons">
-                <a href="#portfolio">
-                    <button type="button" class="btn btn-light" id="navbutton">Portfolio</button>
-                </a>
-                <a href="#contact">
-                    <button type="button" class="btn btn-light" id="navbutton">Contact</button>
-                </a>
-            </div>         
         </div>
     </div>
     <div class="container-fluid" id="about">
@@ -29,7 +33,7 @@
                 <h3>Hello!</h3>
                 <h2>I'm Gregory Smurnyy.</h2>
                 <h3>Website Designer</h3>
-                <img src="me.jpg" id="me" class="img-fluid" alt="Image of Gregory Smurnyy">
+                <img src="me.png" id="me" class="img-fluid" alt="Image of Gregory Smurnyy">
             </div>
         </div>
     </div>
@@ -40,13 +44,13 @@
                     <h1>Portfolio</h1>
                 <div class="row">
                     <div class="col-6" id="fitlink">
-                        <h3>Fitness Website</h3>
+                        <h4>Fitness Website</h4>
                         <a href="https://fitness-influencer-page.framer.ai/" style="width: 50px" alt="Picture of a Website">
                             <img src="/fitex.jpg" id="fitex">
                         </a>
                     </div>
                     <div class="col-6" id="porlink">
-                        <h3>Portfolio Website</h3>
+                        <h4>Portfolio Website</h4>
                         <a href="https://seanpowers.carrd.co/">
                             <img src="/Portfolioexample.jpg" id="porex" alt="Picture of a Website">
                         </a>
@@ -66,7 +70,7 @@
                 <a href="https://www.instagram.com/gregorysmurnyy">
                     <img src="insta.jpg" alt="Instagram Picture" id="insta">
                 </a> 
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDbSGqMcHvkvBPHmLPqrGbRJCpZMFmXcsqjqrrXPwqbbwJskdjVzrKlFZKCpqdrVMsMLsGc">
+                <a href="https://mail.google.com/mail/u/0/#drafts?compose=CllgCJNqKqpmbPcRbtBjkKDfjtkLhthWWqfbHJDxCDqvDNnGDVrZNVDbvnpGDTSJLcjpbRJWCbq">
                      <img src="gmail.jpg" alt="Gmail Picture" id="gmail">
                 </a>            
             </div>
@@ -78,5 +82,6 @@
         </div>      
     </div>
     <script src="/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
